@@ -13,9 +13,15 @@ def head():
     return render_template('/head.html')
 
 
+@app.route('/head/<string:exam_name>')
+def examination(exam_name):
+    return render_template(f'{exam_name}.html')
+
+
+
 @app.route('/pdf')
 def pdf():
-    filename = 'files/2.pdf'  # страницу файла прописывать здесь - решёткаНомерСтраницы без пробелов
+    filename = 'files/2.pdf'  # страницу файла прописывать здесь
     return '''<html><body><script>window.open(\'/open-pdf?file=''' + filename + '''\', \'_blank\');</script></body></html>'''
 
 
