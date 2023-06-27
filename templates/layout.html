@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Атлас рентгенологических укладок</title>
+    <title>Главная</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/index_cool.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/buttons.css') }}">
 </head>
 <body>
-<h1>Атлас рентгенологических укладок</h1>
+<div class="header">
+  <h1>Атлас укладок при рентгенологических исследованиях</h1>
+  <h2>А.Н.Кишковский, Л.А.Тютин, Г.Н.Есиновская</h2>
+</div>
 {% block body %}{% endblock %}
 </body>
 </html>
