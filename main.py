@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template('index.html')
+    return render_template('index_cool.html')
 
 
 @app.route('/head')
@@ -21,7 +21,7 @@ def examination(exam_name):
 
 @app.route('/pdf')
 def pdf():
-    filename = 'files/2.pdf'  # страницу файла прописывать здесь
+    filename = 'files/2.pdf'
     return '''<html><body><script>window.open(\'/open-pdf?file=''' + filename + '''\', \'_blank\');</script></body></html>'''
 
 
