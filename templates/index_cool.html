@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Главная</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/index_cool.css') }}">
-</head>
-<body>
-<div class="header">
-  <h1>Атлас укладок при рентгенологических исследованиях</h1>
-  <h2>А.Н.Кишковский, Л.А.Тютин, Г.Н.Есиновская</h2>
-</div>
+{% extends "index.html" %}
+{% block head %}
+<title>Главная</title>
+{% endblock %}
+{% block body %}
+<div class="contentContainer">
 <ul class="tilesWrap">
   <li>
     <h2>01</h2>
@@ -52,5 +46,5 @@
     <button>Подробнее</button>
   </li>
 </ul>
-</body>
-</html>
+</div>
+{% endblock %}

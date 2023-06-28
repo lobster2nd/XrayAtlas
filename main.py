@@ -10,7 +10,7 @@ def index():
 
 @app.route('/head')
 def head():
-    return render_template('/head.html')
+    return render_template('/head_cool.html')
 
 
 @app.route('/head/<string:exam_name>')

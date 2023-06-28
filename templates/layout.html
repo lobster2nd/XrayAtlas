@@ -2,9 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Главная</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='/styles/index_cool.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/buttons.css') }}">
+    {% block head %}{% endblock %}
 </head>
 <body>
 <div class="header">
