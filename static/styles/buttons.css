@@ -6,9 +6,6 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background: #000;
   min-height: 100vh;
 }
@@ -60,4 +57,14 @@ body {
 }
 .list ul li:hover:before {
   transform: scaleX(1);
+}
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+  color: white;
+}
+.imageContainer {
+  display: flex;
+  justify-content: center;
 }

@@ -1,18 +1,22 @@
-{% extends "index.html" %}
-{% block head %}
-<title>Голова</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='/styles/buttons.css') }}">
-{% endblock %}
-{% block body %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/index_cool.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/styles/buttons.css') }}">
+    <title>Голова</title>
+</head>
+<body>
 <div class="list">
   <h2>Голова</h2>
   <ul>
-    <li><span>СНИМОК ЧЕРЕПА В ПРЯМОЙ ПЕРЕДНЕЙ ОБЗОРНОЙ ПРОЕКЦИИ</span></li>
+    <li><span><a href="{{url_for('examination', exam_name='skullPA')}}">СНИМОК ЧЕРЕПА В ПРЯМОЙ ПЕРЕДНЕЙ ОБЗОРНОЙ ПРОЕКЦИИ</a></span></li>
     <li><span>Череп: боковая проекция</span></li>
     <li><span>Придаточные пазухи носа: затылочноносовая проекция</span></li>
     <li><span>Придаточные пазухи носа: затылочнолобная проекция</span></li>
     <li><span>Quis nostrud exercitation ullamco</span></li>
-    <li><span>Laboris nisi ut aliquip ex</span></li>
+    <li><span><a href="/">НА ГЛАВНУЮ</a></span></li>
   </ul>
 </div>
-{% endblock %}
+</body>
+</html>
